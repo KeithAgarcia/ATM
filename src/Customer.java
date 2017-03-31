@@ -9,7 +9,7 @@ public class Customer {
     public void chooseName() {
         System.out.println("What is your name?");
         name = ATM.scanner.nextLine();
-        System.out.println("Welcome, Keith!");
+        System.out.println("Welcome, " + name + ("!"));
     }
 
 }
