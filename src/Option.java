@@ -26,11 +26,12 @@ public class Option {
             String withdraw = ATM.scanner.nextLine();
             Integer newWithdraw = Integer.valueOf(withdraw);
             {
-                if (newWithdraw > 100) ;
-                {
+                if (newWithdraw > 100) {
                     System.out.println("You don't have enough money bro! Go Home!");
                 }
-                System.out.println(("You withdrew $") + newWithdraw + (". Your new balance is $") + (100 - newWithdraw));
+                else if (newWithdraw < 100) {
+                    System.out.println("You withdrew $" + newWithdraw + ". You're current balance is $" + (100 - newWithdraw));
+                }
             }
         }
         else if (choice.equalsIgnoreCase("4")) {
