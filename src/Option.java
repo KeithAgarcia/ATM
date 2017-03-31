@@ -25,7 +25,13 @@ public class Option {
             System.out.println("How much would you like to withdraw?");
             String withdraw = ATM.scanner.nextLine();
             Integer newWithdraw = Integer.valueOf(withdraw);
-            System.out.println(("You withdrew $") + newWithdraw + (". Your new balance is $") + (100 - newWithdraw));
+            {
+                if (newWithdraw > 100) ;
+                {
+                    System.out.println("You don't have enough money bro! Go Home!");
+                }
+                System.out.println(("You withdrew $") + newWithdraw + (". Your new balance is $") + (100 - newWithdraw));
+            }
         }
         else if (choice.equalsIgnoreCase("4")) {
             System.out.println("Thank you and have a great day!");
