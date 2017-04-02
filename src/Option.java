@@ -5,7 +5,7 @@ public class Option {
     String choice;
 
     public void chooseOption() {
-        System.out.println("Pleas choose on of the following options");
+        System.out.println("Please choose one of the following options");
         System.out.println("Press 1 to view account balance");
         System.out.println("Press 2 to make a deposit");
         System.out.println("Press 3 to withdraw");
@@ -19,7 +19,7 @@ public class Option {
             System.out.println("How much would you like to deposit?");
             String deposit = ATM.scanner.nextLine();
             Integer newDeposit = Integer.valueOf(deposit);
-            System.out.println(("You have added $") + deposit + (" to your account. You're new balance is $") + (100 + newDeposit));
+            System.out.println(("You have added $") + deposit + (" to your account. Your new balance is $") + (100 + newDeposit));
         }
         else if (choice.equalsIgnoreCase("3")) {
             System.out.println("How much would you like to withdraw?");
